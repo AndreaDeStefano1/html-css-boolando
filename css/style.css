@@ -3,38 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-
-.row{
-  height: 1000px;
-  background-color: blue;
+.container{
   width: 80%;
-  margin: 20px auto;
+  /* background-color: blue; */
   text-align: center;
+  margin: auto;
 }
 
-.card-container{  
-  height: 100%;
-  width: 30%;
-  background-color: green;
+.card-container{
+  width: 33%;
   display: inline-block;
+  
 }
 
 .card{
   position: relative;
-  height: 90%;
-  background-color: aqua;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card .item-img{
+  display:block;
+}
+
+.card .item-img-b{
+  display: none;
+}
+
+.card:hover .item-img{
+  display:none
+}
+
+.card:hover .item-img-b{
+  display: block;
 }
 
 .heart{
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 5%;
-  background-color: red;
+  background-color: white;
   padding: 10px;
   font-size: 30px;
   cursor: pointer;
@@ -46,7 +64,7 @@ body{
 
 .labels{
   position: absolute;
-  left: 0;
+  left: 5px;
   bottom: 20px;
 }
 
@@ -66,78 +84,23 @@ body{
 } 
 
 .description{
-  position: relative;
-  height: 10%;
-  background-color: blueviolet;
-}
-
-.info{
-  position: absolute;
   text-align: left;
 }
 
 .info>*{
- margin: 5px 0;
-}
-
-.info h5{
-  color: rgb(115, 130, 143);
-  font-weight: lighter;
-}
-
-.price{
-  color: red;
-}
-
-.old-price{
-  text-decoration: line-through;
-  padding-left: 3px;
-}
-
-.product-1{
-  background-image: url(../img/1.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-1-hover-effect:hover{
-  background-image: url(../img/1b.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-2{
-  background-image: url(../img/2.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-2-hover-effect:hover{
-  background-image: url(../img/2b.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-3{
-  background-image: url(../img/3.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-3-hover-effect:hover{
-  background-image: url(../img/3b.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-}
+  margin: 5px 0;
+ }
+ 
+ .info h5{
+   color: rgb(115, 130, 143);
+   font-weight: lighter;
+ }
+ 
+ .price{
+   color: red;
+ }
+ 
+ .old-price{
+   text-decoration: line-through;
+   padding-left: 3px;
+ }
