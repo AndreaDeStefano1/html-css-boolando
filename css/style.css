@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.row{
+  height: 700px;
+  background-color: blue;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.card-container{
+  
+  height: 100%;
+  width: 30%;
+  background-color: green;
+  display: inline-block;
+}
+
+.card{
+  position: relative;
+  height: 80%;
+  background-color: aqua;
+}
+
+.heart{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+}
+
+.discount{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: red;
+  width: 30px;
+  height: 15px;
+  margin-right: 5px;
+
+}
+
+.type{
+  position: absolute;
+  left: 35px;
+  bottom: 10px;
+  background-color: red;
+  width: 30px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.description{
+  height: 20%;
+  background-color: blueviolet;
+}
