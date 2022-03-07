@@ -55,12 +55,23 @@ body{
   background-color: white;
   padding: 10px 15px;
   font-size: 30px;
+}
+
+label{
   cursor: pointer;
 }
 
-.heart:hover{
-  color:red
+input {
+  display: none;
 }
+
+input:checked ~ label {
+  color: red;
+}
+
+/* .heart:hover{
+  color:red
+} */
 
 .labels{
   position: absolute;
